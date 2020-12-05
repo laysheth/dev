@@ -1,0 +1,43 @@
+import discord
+from discord.ext import commands
+
+bot = commands.Bot(command_prefix= '.')
+#event1 (to bring online)
+@bot.event
+async def on_ready():
+    print('bot is ready.')
+
+@bot.event
+async def on_message(message):
+    if message.author ==bot.user:
+        return
+
+
+    if message.content.startswith('.hello'):
+        await message.channel.send('cloak k pas me teri ma ko bhej bhomsdike :)')
+
+
+
+
+    elif message.content.startswith('.cloak'):
+        await message.channel.send('hello !!,,,,, mera mu me lelo nix:)')
+
+
+
+
+    elif message.content.startswith('.ohm'):
+        await message.channel.send('you fugger... your bot fugger.... your bots papa fugger,,,,,, your bots grandfather fugger,,,,,, your whole family fugger...... ab dekh kya ra h ..... ma chuda @!nix ')
+
+
+
+
+
+
+
+
+
+
+
+     
+
+bot.run('Nzg0NzgyNDU0NzAyODY2NDYy.X8uTnQ.aJovRSz3QgNrTVj9w7y6JzswmG8')
